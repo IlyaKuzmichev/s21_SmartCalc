@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphWindow</class>
+ <widget class="QDialog" name="GraphWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1200</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Graph by SmartCalc</string>
+  </property>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>20</y>
+     <width>1100</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1100</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1100</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>1100</width>
+     <height>700</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>760</y>
+     <width>1066</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_xmin">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>X MIN</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="line_xmin">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>-10</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_xmax">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>X MAX</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="line_xmax">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>10</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>68</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_ymin">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y MIN</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="line_ymin">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>-10</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_ymax">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y MAX</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="line_ymax">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>10</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>328</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_count">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>180</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>180</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>180</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+background-color: #ed9121;
+  border-style: outset;
+  border-width: 1px;
+  border-color: #646c64;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  margin: 4px 2px;
+  opacity: 0.6;
+  font: 18px;
+}
+
+QPushButton:pressed {
+background-color:  #ffc793;
+border-style: inset;
+}
+
+QPushButton:hover {
+background-color:  #ffc793;
+opacity: 1
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Count</string>
+      </property>
+      <property name="shortcut">
+       <string>Enter</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
